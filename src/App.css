@@ -1,0 +1,81 @@
+body {
+  background-color: #9900ff;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  height: calc(100vh - 10rem);
+  background-color: white;
+  position: absolute;
+  top: 5%;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 20px;
+}
+
+.title-area {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.play-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box {
+  width: 100%;
+  height: calc(100vh - 20rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box:first-of-type {
+  border-right: 1px solid lightgrey;
+}
+
+.box-title {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.item-img {
+  width: 200px;
+}
+
+.button-item {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
+
+.result-area {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
