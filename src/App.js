@@ -56,23 +56,23 @@ function App() {
     // user == scissors, computer == rock: user lose
     // user == paper, computer == rock: user win
     // user == paper, computer == scissors: user lose
-    if (user.name == computer.name) {
+    if (user.name === computer.name) {
       return "tie";
-    } else if (user.name == "rock")
-      return computer.name == "scissors" ? "win" : "lose";
-    else if (user.name == "scissors")
-      return computer.name == "paper" ? "win" : "lose";
-    else if (user.name == "paper")
-      return computer.name == "rock" ? "win" : "lose";
+    } else if (user.name === "rock")
+      return computer.name === "scissors" ? "win" : "lose";
+    else if (user.name === "scissors")
+      return computer.name === "paper" ? "win" : "lose";
+    else if (user.name === "paper")
+      return computer.name === "rock" ? "win" : "lose";
   };
 
   const computerJudgement = (userResult) => {
     console.log(userResult)
-    if (userResult == "tie") {
+    if (userResult === "tie") {
       return "tie"
-    } else if (userResult == "win") {
+    } else if (userResult === "win") {
       return "lose"
-    } else if (userResult == "lose") {
+    } else if (userResult === "lose") {
       return "win"
     }
   }
